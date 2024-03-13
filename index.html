@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Windows 11</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="hidden-elements">
+    <div class="arrow-hidden-icons" id="arrow-hidden-icons">
+      <div class="hidden-icon">
+        <img src="Images/hidden-logo-1.webp" alt="">
+      </div>
+      <div class="hidden-icon">
+        <img src="Images/hidden-logo-2.png" alt="">
+      </div>
+      <div class="hidden-icon">
+        <img src="Images/hidden-logo-3.png" alt="">
+      </div>
+    </div>
+    <div class="hidden-icons keyboard-elements">
+      <div>
+        <div>
+          <span>Keyboard layout</span>
+          <span> <img src="Images/windows-icon.png" alt="">+ <span> Spacebar</span></span>
+        </div>
+        <div class="active-language active">
+          <div>
+            <span>ENG</span>
+          </div>
+          <div>
+            <span>English (United States) <br> <span>(English India)</span></span>
+          </div>
+        </div>
+        <div class="active-language">
+          <div>
+            <span>ENG</span>
+          </div>
+          <div>
+            <span>English (United States) <br> <span>US</span></span>
+          </div>
+        </div>
+        <div>
+          <span>More keyboard settings</span>
+        </div>
+      </div>
+    </div>
+    <div class="hidden-icons wifi-sound-battery">
+      <div class="wifi-sound-battery-container">
+        <div class="clickable-icons">
+          <div class="clickable-icons-container">
+            <div class="icon ic-on">
+              <div class="wifi-icon">
+                <img style="width: 1.3rem;" src="Images/wifi-icon.png" alt="">
+              </div>
+              <div class="caret-icon">
+                <svg style="fill: white; transform: rotate(90deg)" width="24" height="24" viewBox="0 0 2048 2048">
+                  <path
+                    d="M1523 1312q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23z" />
+                </svg>
+              </div>
+            </div>
+            <span>Wi-Fi</span>
+          </div>
+          <div class="clickable-icons-container">
+            <div class="icon ic-on">
+              <div class="bluetooth-icon">
+                <img style="width: 1.1rem;" src="Images/bluetooth-icon.png" alt="">
+              </div>
+              <div class="caret-icon">
+                <svg style="fill: white; transform: rotate(90deg)" width="24" height="24" viewBox="0 0 2048 2048">
+                  <path
+                    d="M1523 1312q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23z" />
+                </svg>
+              </div>
+            </div>
+            <span>Bluetooth</span>
+          </div>
+          <div class="clickable-icons-container">
+            <div class="icon ic-on">
+              <img style="width: 1.15rem;" src="Images/aeroplane-icon.png" alt="">
+            </div>
+            <span>Airplane mode</span>
+          </div>
+          <div class="clickable-icons-container">
+            <div class="icon ic-on fill">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path style="fill: white;"
+                  d="M11.0048 11.0804C11.0048 9.50516 10.2104 7.21272 8.64603 4.36096C8.37747 3.87138 7.67676 3.87753 7.37562 4.34142C6.95678 4.98664 6.332 5.6484 5.49915 6.32158L5.12968 6.61083L4.77472 6.87991L4.28418 7.25722C2.55613 8.63443 1.87457 9.85911 2.02412 11.6689C2.15628 13.2683 3.12372 14.4141 4.78685 14.9389C4.19979 15.6225 3.42846 16.1616 2.46342 16.5609C2.08068 16.7193 1.89881 17.158 2.05719 17.5407C2.21558 17.9235 2.65424 18.1053 3.03698 17.9469C4.8701 17.1884 6.18577 15.9713 6.94901 14.3137C7.2344 13.6939 7.46268 13.0826 7.63283 12.4803L7.6761 12.3247L7.7777 11.9121L7.84619 11.5821L7.88783 11.3451L7.95448 10.8684C7.99703 10.4911 8.01557 10.1175 8.00995 9.7477L8.00624 9.7246C8.02395 9.33164 8.34498 9.01549 8.74358 9.00917C9.15774 9.0026 9.49881 9.33302 9.50537 9.74718C9.52853 11.2072 9.232 12.6967 8.62043 14.2115L8.59477 14.3C8.57833 14.3902 8.58947 14.484 8.62792 14.5689C8.73144 14.7972 9.00047 14.8984 9.2288 14.7949L9.34317 14.7371C9.41573 14.6962 9.48092 14.6508 9.53875 14.6008C10.2609 13.9761 11.0048 12.6556 11.0048 11.0804ZM17 6H11.75L11.6482 6.00685C11.2822 6.05651 11 6.3703 11 6.75C11 7.16421 11.3358 7.5 11.75 7.5H17L17.1445 7.50687C17.9051 7.57955 18.5 8.2203 18.5 9V15L18.4931 15.1445C18.4204 15.9051 17.7797 16.5 17 16.5H7.75C7.34438 16.5273 7 16.8205 7 17.25C7 17.6642 7.33579 18 7.75 18H17L17.1763 17.9949C18.7511 17.9037 20 16.5977 20 15V14L21.0006 14.0178L21.1349 14.0089C21.2667 13.9912 21.3903 13.9479 21.5006 13.884C21.7995 13.7111 22.0006 13.3879 22.0006 13.0178V11.0178L21.9933 10.8963C21.9548 10.5778 21.7663 10.3053 21.5006 10.1516C21.3535 10.0665 21.1827 10.0178 21.0006 10.0178L20 10V9L19.9949 8.82373C19.9037 7.24892 18.5977 6 17 6Z"
+                  fill="#212121" />
+              </svg>
+            </div>
+            <span>Battery saver</span>
+          </div>
+          <div class="clickable-icons-container">
+            <div class="icon ic-on">
+              <svg style="fill: white; width: 1rem" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <g id="Line">
+                  <path d="M19.69,1.28a1,1,0,0,0-1.4,1.44,9,9,0,0,1,0,12.84A1,1,0,0,0,19.69,17a11,11,0,0,0,0-15.72Z" />
+                  <path
+                    d="M16.88,4.14A1,1,0,0,0,15.5,5.58a5,5,0,0,1,0,7.12,1,1,0,0,0,0,1.41,1,1,0,0,0,.72.31,1,1,0,0,0,.69-.28,7,7,0,0,0,0-10Z" />
+                  <path
+                    d="M3,9.14A8.88,8.88,0,0,1,5.71,2.72a1,1,0,1,0-1.4-1.44A11,11,0,0,0,4.31,17a1,1,0,1,0,1.4-1.44A8.88,8.88,0,0,1,3,9.14Z" />
+                  <path
+                    d="M8.53,4.17a1,1,0,0,0-1.41,0,7,7,0,0,0,0,10,1,1,0,0,0,.69.28,1,1,0,0,0,.72-.31,1,1,0,0,0,0-1.41,5,5,0,0,1,0-7.12A1,1,0,0,0,8.53,4.17Z" />
+                  <path
+                    d="M12,6.14A3,3,0,0,0,11,12V22a1,1,0,0,0,2,0V12a3,3,0,0,0-1-5.82Zm0,4a1,1,0,1,1,1-1A1,1,0,0,1,12,10.14Z" />
+                </g>
+              </svg>
+            </div>
+            <span>Mobile hotspot</span>
+          </div>
+          <div class="clickable-icons-container">
+            <div class="icon ic-on">
+              <svg style="width: 1.2rem" viewBox="0 0 512 512">
+                <circle fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="20" cx="256" cy="56" r="40" />
+                <path fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="20"
+                  d="M204.23,274.44c2.9-18.06,4.2-35.52-.5-47.59-4-10.38-12.7-16.19-23.2-20.15L88,176.76c-12-4-23.21-10.7-24-23.94-1-17,14-28,29-24,0,0,88,31.14,163,31.14s162-31,162-31c18-5,30,9,30,23.79,0,14.21-11,19.21-24,23.94l-88,31.91c-8,3-21,9-26,18.18-6,10.75-5,29.53-2.1,47.59l5.9,29.63L351.21,467.9c2.8,13.15-6.3,25.44-19.4,27.74S308,489,304.12,476.28L266.56,360.35q-2.71-8.34-4.8-16.87L256,320l-5.3,21.65q-2.52,10.35-5.8,20.48L208,476.18c-4,12.85-14.5,21.75-27.6,19.46S158,480.05,160.94,467.9l37.39-163.83Z" />
+              </svg>
+            </div>
+            <span>Accessiblity</span>
+          </div>
+        </div>
+        <div class="control-slider">
+          <div class="brightness-control">
+            <div class="brightness-control-icon">
+              <img src="Images/brightness-icon.svg" alt="">
+            </div>
+            <input type="range" min="1" max="100" value="50" class="custom-range">
+          </div>
+          <div class="sound-control">
+            <div class="sound-control-icon">
+              <img src="Images/speaker-icon.png" alt="">
+            </div>
+            <input type="range" min="1" max="100" value="30" class="custom-range two">
+            <img style="width: 1.15rem; transform: rotate(180deg)" src="Images/woofer-icon.png" alt="">
+            <svg style="fill: white; transform: rotate(90deg)" width="20" height="20" viewBox="0 0 2048 2048">
+              <path
+                d="M1523 1312q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="battery-percentage">
+        <div class="battery-percentage-container">
+          <img style="width: 1.3rem;" src="Images/battery-icon.png" alt=""><span style="font-size: 0.8rem;">80%</span>
+        </div>
+        <div class="settings-container">
+          <div class="pencil-icon-container">
+            <img style="width: 1.2rem;" src="Images/pencil-icon.png" alt="">
+          </div>
+          <div class="setting-icon-container">
+            <img style="width: 1.1rem;" src="Images/setting-icon.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hidden-icons notification-calendar-container">
+      <div class="notification-container">
+        <div class="notification-text-icon">
+          <span>Notifications</span>
+          <img src="Images/notification-icon.png" alt="">
+        </div>
+        <div class="notifications">
+          <span>No new notifications</span>
+        </div>
+      </div>
+      <div class="calendar-container">
+        <div class="date-container">
+          <span id="calendarDateInfo"></span>
+          <svg style="fill: white;" width="22" height="22" viewBox="0 0 2048 2048">
+            <path
+              d="M1523 1312q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23z" />
+          </svg>
+        </div>
+        <div class="focus-container">
+          <div class="focus-timer">
+            <div id="decrease">
+              <span style="width: 1rem;"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: none;
+                        stroke: #fff;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2px;
+                      }
+                    </style>
+                  </defs>
+                  <title />
+                  <g id="minus">
+                    <line class="cls-1" x1="7" x2="25" y1="16" y2="16" />
+                  </g>
+                </svg></span>
+            </div>
+            <div>
+              <span id="timer">30</span>
+              <span>mins</span>
+            </div>
+            <div id="increase">
+              <span><img src="Images/plus-sign.svg" alt=""></span>
+            </div>
+          </div>
+          <div class="focus-button">
+            <i class="fas fa-play"></i>
+            <span>Focus</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hidden-icons start-button-container">
+      <div class="wrapper">
+        <div class="search-bar-2">
+          <div class="search-icon-2">
+            <i class="fa fa-search"></i>
+          </div>
+          <div class="search-2">
+            <input type="text" placeholder="Search for apps, settings, and documents">
+          </div>
+        </div>
+        <div class="pinned-all-app">
+          <span>Pinned</span>
+          <div>
+            <span>All apps</span>
+            <span>
+              <svg style="fill: white; transform: rotate(90deg)" width="18" height="18" viewBox="0 0 2048 2048">
+                <path
+                  d="M1523 1312q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23z" />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="start-icon-apps">
+          <div class="start-icon-apps-container">
+            <div class="start-icon-app-icon">
+              <img src="Images/creative-cloud-icon.png" alt="">
+            </div>
+            <div class="start-icon-app-text">
+              <span class="centered-content">
+                Adobe Creative Cloud
+              </span>
+            </div>
+          </div>
+          <div class="start-icon-apps-container">
+            <div class="start-icon-app-icon">
+              <img src="Images/ms-office-icon.ico" alt="">
+            </div>
+            <div class="start-icon-app-text">
+              <span class="centered-content">
+                Office
+              </span>
+            </div>
+          </div>
+          <div class="start-icon-apps-container">
+            <div class="start-icon-app-icon">
+              <img src="Images/ms-store-icon.png" alt="">
+            </div>
+            <div class="start-icon-app-text">
+              <span class="centered-content">
+                Microsoft Store
+              </span>
+            </div>
+          </div>
+          <div class="start-icon-apps-container">
+            <div class="start-icon-app-icon">
+              <img src="Images/edge-icon.png" alt="">
+            </div>
+            <div class="start-icon-app-text">
+              <span class="centered-content">
+                Microsoft Edge
+              </span>
+            </div>
+          </div>
+          <div class="start-icon-apps-container">
+            <div class="start-icon-app-icon">
+              <img src="Images/file-explorer-icon.ico" alt="">
+            </div>
+            <div class="start-icon-app-text">
+              <span class="centered-content">
+                File Explorer
+              </span>
+            </div>
+          </div>
+          <div class="start-icon-apps-container">
+            <div class="start-icon-app-icon">
+              <img src="Images/chrome-icon.png" alt="">
+            </div>
+            <div class="start-icon-app-text">
+              <span class="centered-content">
+                Google Chrome
+              </span>
+            </div>
+          </div>
+          <div class="start-icon-apps-container">
+            <div class="start-icon-app-icon">
+              <img src="Images/calendar-icon.png" alt="">
+            </div>
+            <div class="start-icon-app-text">
+              <span class="centered-content">
+                Calendar
+              </span>
+            </div>
+          </div>
+          <div class="start-icon-apps-container">
+            <div class="start-icon-app-icon">
+              <img src="Images/terminal-icon.png" alt="">
+            </div>
+            <div class="start-icon-app-text">
+              <span class="centered-content">
+                Terminal
+              </span>
+            </div>
+          </div>
+          <div class="start-icon-apps-container">
+            <div class="start-icon-app-icon">
+              <img src="Images/excel-icon.png" alt="">
+            </div>
+            <div class="start-icon-app-text">
+              <span class="centered-content">
+                Excel 2013
+              </span>
+            </div>
+          </div>
+          <div class="start-icon-apps-container">
+            <div class="start-icon-app-icon">
+              <img src="Images/paint-icon.ico" alt="">
+            </div>
+            <div class="start-icon-app-text">
+              <span class="centered-content">
+                Paint
+              </span>
+            </div>
+          </div>
+          <div class="start-icon-apps-container">
+            <div class="start-icon-app-icon">
+              <img src="Images/camera-icon.ico" alt="">
+            </div>
+            <div class="start-icon-app-text">
+              <span class="centered-content">
+                Camera
+              </span>
+            </div>
+          </div>
+          <div class="start-icon-apps-container">
+            <div class="start-icon-app-icon">
+              <img src="Images/word-icon.png" alt="">
+            </div>
+            <div class="start-icon-app-text">
+              <span class="centered-content">
+                Word 2013
+              </span>
+            </div>
+          </div>
+          <div class="start-icon-apps-container">
+            <div class="start-icon-app-icon">
+              <img src="Images/whiteboard-icon.ico" alt="">
+            </div>
+            <div class="start-icon-app-text">
+              <span class="centered-content">
+                Whiteboard
+              </span>
+            </div>
+          </div>
+          <div class="start-icon-apps-container">
+            <div class="start-icon-app-icon">
+              <img src="Images/settings-icon.ico" alt="">
+            </div>
+            <div class="start-icon-app-text">
+              <span class="centered-content">
+                Settings
+              </span>
+            </div>
+          </div>
+          <div class="start-icon-apps-container">
+            <div class="start-icon-app-icon">
+              <img src="Images/visual-studio-icon.ico" alt="">
+            </div>
+            <div class="start-icon-app-text">
+              <span class="centered-content">
+                Visual Studio
+              </span>
+            </div>
+          </div>
+          <div class="start-icon-apps-container">
+            <div class="start-icon-app-icon">
+              <img src="Images/photos-icon.ico" alt="">
+            </div>
+            <div class="start-icon-app-text">
+              <span class="centered-content">
+                Photos
+              </span>
+            </div>
+          </div>
+          <div class="start-icon-apps-container">
+            <div class="start-icon-app-icon">
+              <img src="Images/todo-icon.png" alt="">
+            </div>
+            <div class="start-icon-app-text">
+              <span class="centered-content">
+                To Do
+              </span>
+            </div>
+          </div>
+          <div class="start-icon-apps-container">
+            <div class="start-icon-app-icon">
+              <img src="Images/powerpoint-icon.png" alt="">
+            </div>
+            <div class="start-icon-app-text">
+              <span class="centered-content">
+                PowerPoint 2013
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="recommended-more">
+          <span>Recommended</span>
+          <div>
+            <span>More</span>
+            <span>
+              <svg style="fill: white; transform: rotate(90deg)" width="18" height="18" viewBox="0 0 2048 2048">
+                <path
+                  d="M1523 1312q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23z" />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="recommended-more-things">
+          <div class="recommended-more-things-container">
+            <div class="recommended-icon">
+              <img src="Images/valorant-icon.jpg" alt="">
+            </div>
+            <div class="recommended-icon-name">
+              <div class="recommended-name">
+                <span>Valorant</span>
+              </div>
+              <div class="time-ago">
+                <span>Recently added</span>
+              </div>
+            </div>
+          </div>
+          <div class="recommended-more-things-container">
+            <div class="recommended-icon">
+              <img src="Images/vlc-icon.png" alt="">
+            </div>
+            <div class="recommended-icon-name">
+              <div class="recommended-name">
+                <span>Chainsaw Man S1 E03 WebRip 1080p Hindi Japanese English AAC 2.0</span>
+              </div>
+              <div class="time-ago">
+                10h ago
+              </div>
+            </div>
+          </div>
+          <div class="recommended-more-things-container">
+            <div class="recommended-icon">
+              <img src="Images/word-file-icon.png" alt="">
+            </div>
+            <div class="recommended-icon-name">
+              <div class="recommended-name">
+                <span>Object Oriented Programming Through C++.docx</span>
+              </div>
+              <div class="time-ago">
+                <span>1h ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="recommended-more-things-container">
+            <div class="recommended-icon">
+              <img src="Images/image-file-icon.png" alt="">
+            </div>
+            <div class="recommended-icon-name">
+              <div class="recommended-name">
+                <span>screenshot.jpeg</span>
+              </div>
+              <div class="time-ago">
+                <span>5m ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-shut-down">
+        <div class="user-profile">
+          <div class="user-image">
+            <img src="Images/user-image.png" alt="">
+          </div>
+          <span>Nitesh Paudel</span>
+        </div>
+        <div class="power-button">
+          <img src="Images/power-button.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="widgets">
+    <div id="clock">
+      Loading...
+    </div>
+    <div class="weather">
+      <img src="" class="weather-icon">
+      <p id="temperature">Loading...</p>
+    </div>
+    <div class="date">
+      <p id="dateInfo">Loading...</p>
+    </div>
+    <div class="music-player">
+      <audio src="" id="song"></audio>
+      <div class="cover-image">
+        <img src="" alt="music-cover" class="music-cover" id="music-cover">
+      </div>
+      <div class="artist-song">
+        <div class="artist-song-title">
+          <h1 id="current-song"></h1>
+          <h2 id="current-artist"></h2>
+        </div>
+        <div class="music-progress">
+          <span id="current-time">0:00</span>
+          <div class="progress-bar-container" id="progress-bar-container">
+            <div class="progress-bar" id="progress-bar"></div>
+          </div>
+          <span id="total-duration">0:00</span>
+        </div>
+
+
+        <div class="audio-navigation">
+          <button class="song-controls" id="previous-song-button">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button class="song-controls" id="play-song-button">
+            <i class="fas fa-play"></i>
+          </button>
+          <button class="song-controls" id="next-song-button">
+            <i class="fas fa-forward"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="task-bar">
+    <div class="start-menu">
+      <div class="icon i1">
+        <img class="icons start-button" src="Images/start-icon.png" alt="">
+      </div>
+      <div class="icon i2">
+        <div class="search-wrapper">
+          <div class="search-icon">
+            <i class="fa fa-search" id="search-icon"></i>
+          </div>
+          <div class="search">
+            <input type="text" id="search" placeholder="Search">
+          </div>
+          <div class="browser-icon">
+            <img src="Images/bing-chat.png" alt="Search With AI" class="bing-chat-icon">
+          </div>
+        </div>
+      </div>
+
+      <div class="icon i3">
+        <img class="icons" src="Images/task-view.png" alt="Task">
+      </div>
+      <div class="icon i4">
+        <img class="icons" src="Images/vscode-icon.png" alt="Code">
+      </div>
+      <div class="icon i5">
+        <img class="icons" src="Images/chrome-icon.png" alt="Recycle Bin">
+      </div>
+    </div>
+    <div class="essential-icons">
+      <div class="arrow-up" id="arrow-up">
+        <svg id="arrow-icon" width="22" height="22" viewBox="0 0 2048 2048">
+          <path
+            d="M1523 1312q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23z" />
+        </svg>
+      </div>
+      <div class="keyboard">
+        ENG <br> IN
+      </div>
+      <div class="battery-wifi-sound">
+        <div class="icon-container">
+          <img src="Images/wifi-icon.png" alt="">
+          <img src="Images/speaker-icon.png" alt="">
+          <img src="Images/battery-icon.png" alt="">
+        </div>
+      </div>
+      <div class="calendar">
+        <span id="task-bar-time"></span>
+        <span id="task-bar-date"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
