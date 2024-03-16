@@ -38,7 +38,7 @@ function displayTemperature(temperature, iconCode) {
 
 // Fetch weather data including the temperature and icon from openweathermap API
 async function fetchWeatherData() {
-  const apiKey = '717d89ad9c131bcf2e3a9ad274d9914b'; // Replace with your API key
+  const apiKey = ''; // Replace with your API key
   const city = 'Srinagar'; // Replace with your city or area
   const units = 'metric';
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
